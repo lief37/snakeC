@@ -119,6 +119,7 @@ class Controller {
                 Pixel lastPixel = Pixel(snake.coords.at(snake.coords.size()-1).x, snake.coords.at(snake.coords.size()-1).y);
                 snake.move(nextPixel);
                 snake.coords.push_back(lastPixel);
+                fruit.resetFruit(snake);
             } else {
                 snake.move(nextPixel);
             }
